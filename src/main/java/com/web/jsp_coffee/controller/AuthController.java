@@ -1,5 +1,6 @@
 package com.web.jsp_coffee.controller;
 
+import com.web.jsp_coffee.dao.User;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -8,8 +9,9 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 import com.web.jsp_coffee.model.Auth;
+import jakarta.servlet.http.HttpSession;
 
-@WebServlet(name = "dang-nhap", urlPatterns = {"/dang-nhap"})
+@WebServlet(name = "dang-nhap", urlPatterns = {"/dang-nhap", "/logout"})
 public class AuthController extends HttpServlet {
 
     public AuthController() {
@@ -18,6 +20,12 @@ public class AuthController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        // lay url hien tai
+        String url = req.getServletPath();
+        if (url.equals("/logout")) {
+            HttpSession session = req.getSession();
+            session.removeAttribute("user");
+        }
         req.getRequestDispatcher("/views/web/login.jsp").forward(req, resp);
     }
 
@@ -25,17 +33,14 @@ public class AuthController extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String email = req.getParameter("email");
         String password = req.getParameter("password");
-        System.out.println("Check Email: " + email);
-        System.out.println("Check Password: " + password);
-
-        // check if email and password are not null
         if (email != null && password != null) {
             try {
                 Boolean check = Auth.getInstance().checkLogin(email, password);
                 if (check) {
                     // login success
-                    System.out.println("Đăng nhập thành công!");
-
+                    HttpSession section = req.getSession();
+                    User user = Auth.getInstance().getUserByEmail(email);
+                    section.setAttribute("user", user);
                     resp.sendRedirect(req.getContextPath() + "/trang-chu");
                 } else {
                     // login failed

@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import com.web.jsp_coffee.dao.User;
 
 public class Auth {
     private Connection connection;
@@ -83,5 +84,43 @@ public class Auth {
             e.printStackTrace();
         }
         return false;
+    }
+    // get Name by Email
+    public String getNameByEmail(String email) {
+        String query = "SELECT Name FROM users WHERE Email = ?";
+        try (PreparedStatement ps = connection.prepareStatement(query)) {
+            ps.setString(1, email);
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    return rs.getString("Name");
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    // get thong tin user by email
+    public User getUserByEmail(String email) {
+        String query = "SELECT * FROM users WHERE Email = ?";
+        try (PreparedStatement ps = connection.prepareStatement(query)) {
+            ps.setString(1, email);
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    User user = new User();
+                    user.setUserID(rs.getInt("UserID"));
+                    user.setName(rs.getString("Name"));
+                    user.setEmail(rs.getString("Email"));
+                    user.setPhone(rs.getString("Phone"));
+                    user.setRole(rs.getString("Role"));
+                    user.setAddress(rs.getString("Address"));
+                    user.setDateOfBirth(rs.getString("DateOfBirth"));
+                    return user;
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }
