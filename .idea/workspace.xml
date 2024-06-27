@@ -14,7 +14,7 @@
       <change beforePath="$PROJECT_DIR$/../.vscode/settings.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CRUD_Hibernate_JPA-master/CRUD_Hibernate_JPA-master/.idea/CRUD_Hibernate_JPA-master.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CRUD_Hibernate_JPA-master/CRUD_Hibernate_JPA-master/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/Home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/Home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaTest/JavaMVC/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaTest/JavaMVC/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaTest/JavaMVC/.idea/misc.xml" beforeDir="false" />
@@ -4811,7 +4811,7 @@
       <workItem from="1719373159692" duration="6566000" />
       <workItem from="1719382691693" duration="4323000" />
       <workItem from="1719455890116" duration="5727000" />
-      <workItem from="1719477085658" duration="3155000" />
+      <workItem from="1719477085658" duration="3884000" />
     </task>
     <servers />
   </component>
