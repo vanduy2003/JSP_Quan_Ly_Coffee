@@ -1,3 +1,4 @@
+<%@ page import="com.web.jsp_coffee.dao.User" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,9 +55,26 @@
           <a class="nav-link dropdown-toggle" href="#" id="dropdown0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span class="icon icon-user fs-3"></span>
           </a>
+            <%
+                User user = (User) request.getSession().getAttribute("user");
+            %>
           <div class="dropdown-menu" aria-labelledby="dropdown04">
-            <a class="dropdown-item" href="dang-nhap">Login</a>
-            <a class="dropdown-item" href="./views/web/">Sign out</a>
+           <%
+                if (user == null) {
+
+
+           %>
+              <a class="dropdown-item" href="dang-nhap">Login</a>
+              <a class="dropdown-item" href="./views/web/">Sign out</a>
+            <%
+                }else {
+
+            %>
+              <a class="dropdown-item" href=""><%=user.getName()%></a>
+              <a class="dropdown-item" href="/JSP_Coffee_war/logout">Logout</a>
+              <%
+                }
+                %>
           </div>
         </li>
       </ul>
