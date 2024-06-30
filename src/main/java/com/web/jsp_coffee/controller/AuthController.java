@@ -41,6 +41,10 @@ public class AuthController extends HttpServlet {
                     HttpSession section = req.getSession();
                     User user = Auth.getInstance().getUserByEmail(email);
                     section.setAttribute("user", user);
+                    if(user.getRole().equals("Admin")) {
+                        resp.sendRedirect(req.getContextPath() + "/admin");
+                        return;
+                    }
                     resp.sendRedirect(req.getContextPath() + "/trang-chu");
                 } else {
                     // login failed

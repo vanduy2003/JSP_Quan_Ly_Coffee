@@ -1,5 +1,7 @@
 <%@ page import="com.web.jsp_coffee.dao.User" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="com.web.jsp_coffee.dao.Product" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,28 +30,28 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
   <div class="container">
-    <a class="navbar-brand" href="index.jsp">Coffee<small>Blend</small></a>
+    <a class="navbar-brand" href="/JSP_Coffee_war/trang-chu">Coffee<small>Blend</small></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="oi oi-menu"></span> Menu
     </button>
     <div class="collapse navbar-collapse fs-1" id="ftco-nav">
       <ul class="navbar-nav ml-auto fs-1">
-        <li class="nav-item active"><a href="index.jsp" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="./views/web/menu.html" class="nav-link">Menu</a></li>
-        <li class="nav-item"><a href="./views/web/services.html" class="nav-link">Services</a></li>
-        <li class="nav-item"><a href="./views/web/blog.html" class="nav-link">Blog</a></li>
-        <li class="nav-item"><a href="./views/web/about.html" class="nav-link">About</a></li>
+        <li class="nav-item active"><a href="/JSP_Coffee_war/trang-chu" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="views/web/menu.jsp" class="nav-link">Menu</a></li>
+        <li class="nav-item"><a href="views/web/services.jsp" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="views/web/blog.jsp" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="views/web/about.jsp" class="nav-link">About</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="room.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
           <div class="dropdown-menu" aria-labelledby="dropdown04">
-            <a class="dropdown-item" href="./views/web/shop.html">Shop</a>
-            <a class="dropdown-item" href="./views/web/product-single.html">Single Product</a>
-            <a class="dropdown-item" href="./views/web/cart.html">Cart</a>
-            <a class="dropdown-item" href="./views/web/checkout.html">Checkout</a>
+            <a class="dropdown-item" href="views/web/shop.jsp">Shop</a>
+            <a class="dropdown-item" href="views/web/product-single.jsp">Single Product</a>
+            <a class="dropdown-item" href="views/web/cart.jsp">Cart</a>
+            <a class="dropdown-item" href="views/web/checkout.jsp">Checkout</a>
           </div>
         </li>
-        <li class="nav-item"><a href="./views/web/contact.html" class="nav-link">Contact</a></li>
-        <li class="nav-item cart"><a href="./views/web/cart.html" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>1</small></span></a></li>
+        <li class="nav-item"><a href="views/web/contact.jsp" class="nav-link">Contact</a></li>
+        <li class="nav-item cart"><a href="views/web/cart.jsp" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>1</small></span></a></li>
 <%--        tôi muốn hiện thêm 1 icon user khi hover sẽ hiển thị dropdown đăng nhập và đăng ký --%>
         <li class="nav-item dropdown fs-4">
           <a class="nav-link dropdown-toggle" href="#" id="dropdown0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -354,50 +356,26 @@
       </div>
     </div>
     <div class="row">
+      <%
+        ArrayList<Product> listProduct = (ArrayList<Product>) request.getAttribute("listProduct");
+        if (listProduct != null) {
+          for (Product product : listProduct) {
+      %>
       <div class="col-md-3">
         <div class="menu-entry">
-          <a href="#" class="img" style="background-image: url(./views/web/images/menu-1.jpg);"></a>
+          <a href="#" class="img" style="background-image: url(<%=product.getImageURL()%>);"></a>
           <div class="text text-center pt-4">
-            <h3><a href="#">Coffee Capuccino</a></h3>
-            <p>A small river named Duden flows by their place and supplies</p>
-            <p class="price"><span>$5.90</span></p>
+            <h3><a href="#"><%=product.getName()%></a></h3>
+            <p><%=product.getMoTa()%></p>
+            <p class="price"><span>$<%=product.getPrice()%></span></p>
             <p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
           </div>
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="menu-entry">
-          <a href="#" class="img" style="background-image: url(./views/web/images/menu-2.jpg);"></a>
-          <div class="text text-center pt-4">
-            <h3><a href="#">Coffee Capuccino</a></h3>
-            <p>A small river named Duden flows by their place and supplies</p>
-            <p class="price"><span>$5.90</span></p>
-            <p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="menu-entry">
-          <a href="#" class="img" style="background-image: url(./views/web/images/menu-3.jpg);"></a>
-          <div class="text text-center pt-4">
-            <h3><a href="#">Coffee Capuccino</a></h3>
-            <p>A small river named Duden flows by their place and supplies</p>
-            <p class="price"><span>$5.90</span></p>
-            <p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="menu-entry">
-          <a href="#" class="img" style="background-image: url(./views/web/images/menu-4.jpg);"></a>
-          <div class="text text-center pt-4">
-            <h3><a href="#">Coffee Capuccino</a></h3>
-            <p>A small river named Duden flows by their place and supplies</p>
-            <p class="price"><span>$5.90</span></p>
-            <p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
-          </div>
-        </div>
-      </div>
+      <%
+          }
+        }
+      %>
     </div>
   </div>
 </section>

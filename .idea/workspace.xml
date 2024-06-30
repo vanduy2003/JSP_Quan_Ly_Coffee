@@ -10,14 +10,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43a066a4-0b9e-4bd0-909f-1e83181f1296" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/web/jsp_coffee/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/web/jsp_coffee/dao/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/web/jsp_coffee/model/ProductModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/web/jsp_coffee/model/UserModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../$RECYCLE.BIN/S-1-5-21-4218709761-2213678427-3968473855-1001/$R7J1YG8.idea/Python-Quan-Ly-Ban-Xem-Phim.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.vscode/settings.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CRUD_Hibernate_JPA-master/CRUD_Hibernate_JPA-master/.idea/CRUD_Hibernate_JPA-master.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CRUD_Hibernate_JPA-master/CRUD_Hibernate_JPA-master/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/web/jsp_coffee/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/web/jsp_coffee/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/web/jsp_coffee/model/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/web/jsp_coffee/model/Auth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/web/jsp_coffee/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/web/jsp_coffee/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/Home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/Home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/web/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/web/about.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/web/blog-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/web/blog-single.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/web/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/web/blog.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/web/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/web/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/web/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/web/checkout.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/web/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/web/contact.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/web/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/web/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/web/product-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/web/product-single.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/web/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/web/services.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/web/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/web/shop.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaTest/JavaMVC/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaTest/JavaMVC/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaTest/JavaMVC/.idea/misc.xml" beforeDir="false" />
@@ -4595,21 +4612,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Tomcat Server.Tomcat 10.1.24.executor": "Run",
-    "git-widget-placeholder": "Merging main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/JavaTest/Project/Project-Java-JSP-Servlet",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 10.1.24.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JSP_Coffee&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JSP_Coffee\src\main\webapp\WEB-INF" />
@@ -4618,9 +4635,9 @@
       <recent name="D:\JSP_Coffee\src\main\webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.web.jsp_coffee.model" />
       <recent name="com.web.jsp_coffee.controller" />
       <recent name="com.web.jsp_coffee.dao" />
-      <recent name="com.web.jsp_coffee.model" />
     </key>
   </component>
   <component name="RunManager">
@@ -4815,6 +4832,11 @@
       <workItem from="1719382691693" duration="4323000" />
       <workItem from="1719455890116" duration="5727000" />
       <workItem from="1719477085658" duration="3155000" />
+      <workItem from="1719556237223" duration="8677000" />
+      <workItem from="1719641860319" duration="10315000" />
+      <workItem from="1719672422916" duration="8398000" />
+      <workItem from="1719719687246" duration="8170000" />
+      <workItem from="1719756773376" duration="639000" />
     </task>
     <servers />
   </component>

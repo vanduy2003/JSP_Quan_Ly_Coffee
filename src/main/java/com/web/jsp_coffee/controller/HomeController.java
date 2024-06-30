@@ -1,7 +1,9 @@
 package com.web.jsp_coffee.controller;
 
+import com.web.jsp_coffee.dao.Product;
 import com.web.jsp_coffee.dao.User;
 import com.web.jsp_coffee.model.Auth;
+import com.web.jsp_coffee.model.ProductModel;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
@@ -12,6 +14,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 @WebServlet(name = "trang-chu", urlPatterns = {"/trang-chu"})
 public class HomeController extends HttpServlet {
@@ -21,6 +24,13 @@ public class HomeController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        try {
+            ArrayList<Product> listProduct = ProductModel.getInstance().selectAll();
+            ProductModel.getInstance().closeConnection();
+            req.setAttribute("listProduct", listProduct);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
         req.getRequestDispatcher("index.jsp").forward(req, resp);
     }
 

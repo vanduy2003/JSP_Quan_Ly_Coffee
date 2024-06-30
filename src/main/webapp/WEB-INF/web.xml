@@ -6,6 +6,7 @@
     <servlet-mapping>
         <servlet-name>default</servlet-name>
         <url-pattern>/views/admin/assets/*</url-pattern>
+        <url-pattern>/views/admin/images/*</url-pattern>
         <url-pattern>/views/web/*</url-pattern>
     </servlet-mapping>
 </web-app>

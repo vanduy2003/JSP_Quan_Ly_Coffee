@@ -31,28 +31,28 @@
   <body>
   	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="../../index.jsp">Coffee<small>Blend</small></a>
+	      <a class="navbar-brand" href="/JSP_Coffee_war/trang-chu">Coffee<small>Blend</small></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="../../index.jsp" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
-	          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-	          <li class="nav-item active"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="/JSP_Coffee_war/trang-chu" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="menu.jsp" class="nav-link">Menu</a></li>
+	          <li class="nav-item"><a href="services.jsp" class="nav-link">Services</a></li>
+	          <li class="nav-item"><a href="blog.jsp" class="nav-link">Blog</a></li>
+	          <li class="nav-item"><a href="about.jsp" class="nav-link">About</a></li>
 	          <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="room.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
-              	<a class="dropdown-item" href="shop.html">Shop</a>
-                <a class="dropdown-item" href="product-single.html">Single Product</a>
-                <a class="dropdown-item" href="cart.html">Cart</a>
-                <a class="dropdown-item" href="checkout.html">Checkout</a>
+              	<a class="dropdown-item" href="shop.jsp">Shop</a>
+                <a class="dropdown-item" href="product-single.jsp">Single Product</a>
+                <a class="dropdown-item" href="cart.jsp">Cart</a>
+                <a class="dropdown-item" href="checkout.jsp">Checkout</a>
               </div>
             </li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-	          <li class="nav-item cart"><a href="cart.html" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>1</small></span></a></li>
+	          <li class="nav-item"><a href="contact.jsp" class="nav-link">Contact</a></li>
+	          <li class="nav-item cart"><a href="cart.jsp" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>1</small></span></a></li>
 	        </ul>
 	      </div>
 		  </div>
@@ -67,8 +67,8 @@
           <div class="row slider-text justify-content-center align-items-center">
 
             <div class="col-md-7 col-sm-12 text-center ftco-animate">
-            	<h1 class="mb-3 mt-5 bread">Blog</h1>
-	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Blog</span></p>
+            	<h1 class="mb-3 mt-5 bread">Product Detail</h1>
+	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Product Detail</span></p>
             </div>
 
           </div>
@@ -77,115 +77,108 @@
     </section>
 
     <section class="ftco-section">
-      <div class="container">
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-              </a>
-              <div class="text py-4 d-block">
-              	<div class="meta">
-                  <div><a href="#">Sept 28, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading mt-2"><a href="#">Coffee Testing Day</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-              </a>
-              <div class="text py-4 d-block">
-              	<div class="meta">
-                  <div><a href="#">Sept 28, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading mt-2"><a href="#">Coffee Testing Day</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-              </a>
-              <div class="text py-4 d-block">
-              	<div class="meta">
-                  <div><a href="#">Sept 28, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading mt-2"><a href="#">Coffee Testing Day</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_4.jpg');">
-              </a>
-              <div class="text py-4 d-block">
-              	<div class="meta">
-                  <div><a href="#">Sept 28, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading mt-2"><a href="#">Coffee Testing Day</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_5.jpg');">
-              </a>
-              <div class="text py-4 d-block">
-              	<div class="meta">
-                  <div><a href="#">Sept 28, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading mt-2"><a href="#">Coffee Testing Day</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_6.jpg');">
-              </a>
-              <div class="text py-4 d-block">
-              	<div class="meta">
-                  <div><a href="#">Sept 28, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading mt-2"><a href="#">Coffee Testing Day</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-lg-6 mb-5 ftco-animate">
+    				<a href="images/menu-2.jpg" class="image-popup"><img src="images/menu-2.jpg" class="img-fluid" alt="Colorlib Template"></a>
+    			</div>
+    			<div class="col-lg-6 product-details pl-md-5 ftco-animate">
+    				<h3>Creamy Latte Coffee</h3>
+    				<p class="price"><span>$4.90</span></p>
+    				<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+    				<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.
+						</p>
+						<div class="row mt-4">
+							<div class="col-md-6">
+								<div class="form-group d-flex">
+		              <div class="select-wrap">
+	                  <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+	                  <select name="" id="" class="form-control">
+	                  	<option value="">Small</option>
+	                    <option value="">Medium</option>
+	                    <option value="">Large</option>
+	                    <option value="">Extra Large</option>
+	                  </select>
+	                </div>
+		            </div>
+							</div>
+							<div class="w-100"></div>
+							<div class="input-group col-md-6 d-flex mb-3">
+	             	<span class="input-group-btn mr-2">
+	                	<button type="button" class="quantity-left-minus btn"  data-type="minus" data-field="">
+	                   <i class="icon-minus"></i>
+	                	</button>
+	            		</span>
+	             	<input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
+	             	<span class="input-group-btn ml-2">
+	                	<button type="button" class="quantity-right-plus btn" data-type="plus" data-field="">
+	                     <i class="icon-plus"></i>
+	                 </button>
+	             	</span>
+	          	</div>
+          	</div>
+          	<p><a href="cart.jsp" class="btn btn-primary py-3 px-5">Add to Cart</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section">
+    	<div class="container">
+    		<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+          	<span class="subheading">Discover</span>
+            <h2 class="mb-4">Related products</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
           </div>
         </div>
-        <div class="row mt-5">
-          <div class="col text-center">
-            <div class="block-27">
-              <ul>
-                <li><a href="#">&lt;</a></li>
-                <li class="active"><span>1</span></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">&gt;</a></li>
-              </ul>
-            </div>
-          </div>
+        <div class="row">
+        	<div class="col-md-3">
+        		<div class="menu-entry">
+    					<a href="#" class="img" style="background-image: url(images/menu-1.jpg);"></a>
+    					<div class="text text-center pt-4">
+    						<h3><a href="#">Coffee Capuccino</a></h3>
+    						<p>A small river named Duden flows by their place and supplies</p>
+    						<p class="price"><span>$5.90</span></p>
+    						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
+    					</div>
+    				</div>
+        	</div>
+        	<div class="col-md-3">
+        		<div class="menu-entry">
+    					<a href="#" class="img" style="background-image: url(images/menu-2.jpg);"></a>
+    					<div class="text text-center pt-4">
+    						<h3><a href="#">Coffee Capuccino</a></h3>
+    						<p>A small river named Duden flows by their place and supplies</p>
+    						<p class="price"><span>$5.90</span></p>
+    						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
+    					</div>
+    				</div>
+        	</div>
+        	<div class="col-md-3">
+        		<div class="menu-entry">
+    					<a href="#" class="img" style="background-image: url(images/menu-3.jpg);"></a>
+    					<div class="text text-center pt-4">
+    						<h3><a href="#">Coffee Capuccino</a></h3>
+    						<p>A small river named Duden flows by their place and supplies</p>
+    						<p class="price"><span>$5.90</span></p>
+    						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
+    					</div>
+    				</div>
+        	</div>
+        	<div class="col-md-3">
+        		<div class="menu-entry">
+    					<a href="#" class="img" style="background-image: url(images/menu-4.jpg);"></a>
+    					<div class="text text-center pt-4">
+    						<h3><a href="#">Coffee Capuccino</a></h3>
+    						<p>A small river named Duden flows by their place and supplies</p>
+    						<p class="price"><span>$5.90</span></p>
+    						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
+    					</div>
+    				</div>
+        	</div>
         </div>
-      </div>
+    	</div>
     </section>
 
     <footer class="ftco-footer ftco-section img">
@@ -288,6 +281,44 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+
+  <script>
+		$(document).ready(function(){
+
+		var quantitiy=0;
+		   $('.quantity-right-plus').click(function(e){
+		        
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        var quantity = parseInt($('#quantity').val());
+		        
+		        // If is not undefined
+		            
+		            $('#quantity').val(quantity + 1);
+
+		          
+		            // Increment
+		        
+		    });
+
+		     $('.quantity-left-minus').click(function(e){
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        var quantity = parseInt($('#quantity').val());
+		        
+		        // If is not undefined
+		      
+		            // Increment
+		            if(quantity>0){
+		            $('#quantity').val(quantity - 1);
+		            }
+		    });
+		    
+		});
+	</script>
+
     
   </body>
 </html>

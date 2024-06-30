@@ -31,27 +31,27 @@
   <body>
   	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="../../index.jsp">Coffee<small>Blend</small></a>
+	      <a class="navbar-brand" href="/JSP_Coffee_war/trang-chu">Coffee<small>Blend</small></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="../../index.jsp" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
-	          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="/JSP_Coffee_war/trang-chu" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="menu.jsp" class="nav-link">Menu</a></li>
+	          <li class="nav-item"><a href="services.jsp" class="nav-link">Services</a></li>
+	          <li class="nav-item"><a href="blog.jsp" class="nav-link">Blog</a></li>
+	          <li class="nav-item"><a href="about.jsp" class="nav-link">About</a></li>
 	          <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="room.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
-              	<a class="dropdown-item" href="shop.html">Shop</a>
-                <a class="dropdown-item" href="product-single.html">Single Product</a>
-                <a class="dropdown-item" href="cart.html">Cart</a>
-                <a class="dropdown-item" href="checkout.html">Checkout</a>
+              	<a class="dropdown-item" href="shop.jsp">Shop</a>
+                <a class="dropdown-item" href="product-single.jsp">Single Product</a>
+                <a class="dropdown-item" href="cart.jsp">Cart</a>
+                <a class="dropdown-item" href="checkout.jsp">Checkout</a>
               </div>
             </li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	          <li class="nav-item"><a href="contact.jsp" class="nav-link">Contact</a></li>
 	          <li class="nav-item cart"><a href="cart.html" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>1</small></span></a></li>
 	        </ul>
 	      </div>
@@ -67,61 +67,105 @@
           <div class="row slider-text justify-content-center align-items-center">
 
             <div class="col-md-7 col-sm-12 text-center ftco-animate">
-            	<h1 class="mb-3 mt-5 bread">Product Detail</h1>
-	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Product Detail</span></p>
+            	<h1 class="mb-3 mt-5 bread">Cart</h1>
+	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Cart</span></p>
             </div>
 
           </div>
         </div>
       </div>
     </section>
+		
+		<section class="ftco-section ftco-cart">
+			<div class="container">
+				<div class="row">
+    			<div class="col-md-12 ftco-animate">
+    				<div class="cart-list">
+	    				<table class="table">
+						    <thead class="thead-primary">
+						      <tr class="text-center">
+						        <th>&nbsp;</th>
+						        <th>&nbsp;</th>
+						        <th>Product</th>
+						        <th>Price</th>
+						        <th>Quantity</th>
+						        <th>Total</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr class="text-center">
+						        <td class="product-remove"><a href="#"><span class="icon-close"></span></a></td>
+						        
+						        <td class="image-prod"><div class="img" style="background-image:url(images/menu-2.jpg);"></div></td>
+						        
+						        <td class="product-name">
+						        	<h3>Creamy Latte Coffee</h3>
+						        	<p>Far far away, behind the word mountains, far from the countries</p>
+						        </td>
+						        
+						        <td class="price">$4.90</td>
+						        
+						        <td class="quantity">
+						        	<div class="input-group mb-3">
+					             	<input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
+					          	</div>
+					          </td>
+						        
+						        <td class="total">$4.90</td>
+						      </tr><!-- END TR-->
 
-    <section class="ftco-section">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-lg-6 mb-5 ftco-animate">
-    				<a href="images/menu-2.jpg" class="image-popup"><img src="images/menu-2.jpg" class="img-fluid" alt="Colorlib Template"></a>
-    			</div>
-    			<div class="col-lg-6 product-details pl-md-5 ftco-animate">
-    				<h3>Creamy Latte Coffee</h3>
-    				<p class="price"><span>$4.90</span></p>
-    				<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-    				<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.
-						</p>
-						<div class="row mt-4">
-							<div class="col-md-6">
-								<div class="form-group d-flex">
-		              <div class="select-wrap">
-	                  <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-	                  <select name="" id="" class="form-control">
-	                  	<option value="">Small</option>
-	                    <option value="">Medium</option>
-	                    <option value="">Large</option>
-	                    <option value="">Extra Large</option>
-	                  </select>
-	                </div>
-		            </div>
-							</div>
-							<div class="w-100"></div>
-							<div class="input-group col-md-6 d-flex mb-3">
-	             	<span class="input-group-btn mr-2">
-	                	<button type="button" class="quantity-left-minus btn"  data-type="minus" data-field="">
-	                   <i class="icon-minus"></i>
-	                	</button>
-	            		</span>
-	             	<input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
-	             	<span class="input-group-btn ml-2">
-	                	<button type="button" class="quantity-right-plus btn" data-type="plus" data-field="">
-	                     <i class="icon-plus"></i>
-	                 </button>
-	             	</span>
-	          	</div>
-          	</div>
-          	<p><a href="cart.html" class="btn btn-primary py-3 px-5">Add to Cart</a></p>
+						      <tr class="text-center">
+						        <td class="product-remove"><a href="#"><span class="icon-close"></span></a></td>
+						        
+						        <td class="image-prod"><div class="img" style="background-image:url(images/dish-2.jpg);"></div></td>
+						        
+						        <td class="product-name">
+						        	<h3>Grilled Ribs Beef</h3>
+						        	<p>Far far away, behind the word mountains, far from the countries</p>
+						        </td>
+						        
+						        <td class="price">$15.70</td>
+						        
+						        <td class="quantity">
+						        	<div class="input-group mb-3">
+					             	<input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
+					          	</div>
+					          </td>
+						        
+						        <td class="total">$15.70</td>
+						      </tr><!-- END TR-->
+						    </tbody>
+						  </table>
+					  </div>
     			</div>
     		</div>
-    	</div>
-    </section>
+    		<div class="row justify-content-end">
+    			<div class="col col-lg-3 col-md-6 mt-5 cart-wrap ftco-animate">
+    				<div class="cart-total mb-3">
+    					<h3>Cart Totals</h3>
+    					<p class="d-flex">
+    						<span>Subtotal</span>
+    						<span>$20.60</span>
+    					</p>
+    					<p class="d-flex">
+    						<span>Delivery</span>
+    						<span>$0.00</span>
+    					</p>
+    					<p class="d-flex">
+    						<span>Discount</span>
+    						<span>$3.00</span>
+    					</p>
+    					<hr>
+    					<p class="d-flex total-price">
+    						<span>Total</span>
+    						<span>$17.60</span>
+    					</p>
+    				</div>
+    				<p class="text-center"><a href="checkout.jsp" class="btn btn-primary py-3 px-4">Proceed to Checkout</a></p>
+    			</div>
+    		</div>
+			</div>
+		</section>
 
     <section class="ftco-section">
     	<div class="container">
@@ -281,43 +325,6 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-
-  <script>
-		$(document).ready(function(){
-
-		var quantitiy=0;
-		   $('.quantity-right-plus').click(function(e){
-		        
-		        // Stop acting like a button
-		        e.preventDefault();
-		        // Get the field name
-		        var quantity = parseInt($('#quantity').val());
-		        
-		        // If is not undefined
-		            
-		            $('#quantity').val(quantity + 1);
-
-		          
-		            // Increment
-		        
-		    });
-
-		     $('.quantity-left-minus').click(function(e){
-		        // Stop acting like a button
-		        e.preventDefault();
-		        // Get the field name
-		        var quantity = parseInt($('#quantity').val());
-		        
-		        // If is not undefined
-		      
-		            // Increment
-		            if(quantity>0){
-		            $('#quantity').val(quantity - 1);
-		            }
-		    });
-		    
-		});
-	</script>
 
     
   </body>

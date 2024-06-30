@@ -31,28 +31,28 @@
   <body>
   	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="../../index.jsp">Coffee<small>Blend</small></a>
+	      <a class="navbar-brand" href="/JSP_Coffee_war/trang-chu">Coffee<small>Blend</small></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="../../index.jsp" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
-	          <li class="nav-item active"><a href="services.html" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="/JSP_Coffee_war/trang-chu" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="menu.jsp" class="nav-link">Menu</a></li>
+	          <li class="nav-item"><a href="services.jsp" class="nav-link">Services</a></li>
+	          <li class="nav-item"><a href="blog.jsp" class="nav-link">Blog</a></li>
+	          <li class="nav-item"><a href="about.jsp" class="nav-link">About</a></li>
 	          <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="room.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
-              	<a class="dropdown-item" href="shop.html">Shop</a>
-                <a class="dropdown-item" href="product-single.html">Single Product</a>
-                <a class="dropdown-item" href="cart.html">Cart</a>
-                <a class="dropdown-item" href="checkout.html">Checkout</a>
+              	<a class="dropdown-item" href="shop.jsp">Shop</a>
+                <a class="dropdown-item" href="product-single.jsp">Single Product</a>
+                <a class="dropdown-item" href="room.html">Cart</a>
+                <a class="dropdown-item" href="checkout.jsp">Checkout</a>
               </div>
             </li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-	          <li class="nav-item cart"><a href="cart.html" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>1</small></span></a></li>
+	          <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
+	          <li class="nav-item cart"><a href="cart.jsp" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>1</small></span></a></li>
 	        </ul>
 	      </div>
 		  </div>
@@ -67,8 +67,8 @@
           <div class="row slider-text justify-content-center align-items-center">
 
             <div class="col-md-7 col-sm-12 text-center ftco-animate">
-            	<h1 class="mb-3 mt-5 bread">Services</h1>
-	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Services</span></p>
+            	<h1 class="mb-3 mt-5 bread">Contact Us</h1>
+	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Contact</span></p>
             </div>
 
           </div>
@@ -76,44 +76,59 @@
       </div>
     </section>
 
-    <section class="ftco-section ftco-services">
-    	<div class="container">
-    		<div class="row">
-          <div class="col-md-4 ftco-animate">
-            <div class="media d-block text-center block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-5">
-              	<span class="flaticon-choices"></span>
+    <section class="ftco-section contact-section">
+      <div class="container mt-5">
+        <div class="row block-9">
+					<div class="col-md-4 contact-info ftco-animate">
+						<div class="row">
+							<div class="col-md-12 mb-4">
+	              <h2 class="h4">Contact Information</h2>
+	            </div>
+	            <div class="col-md-12 mb-3">
+	              <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+	            </div>
+	            <div class="col-md-12 mb-3">
+	              <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+	            </div>
+	            <div class="col-md-12 mb-3">
+	              <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+	            </div>
+	            <div class="col-md-12 mb-3">
+	              <p><span>Website:</span> <a href="#">yoursite.com</a></p>
+	            </div>
+						</div>
+					</div>
+					<div class="col-md-1"></div>
+          <div class="col-md-6 ftco-animate">
+            <form action="#" class="contact-form">
+            	<div class="row">
+            		<div class="col-md-6">
+	                <div class="form-group">
+	                  <input type="text" class="form-control" placeholder="Your Name">
+	                </div>
+                </div>
+                <div class="col-md-6">
+	                <div class="form-group">
+	                  <input type="text" class="form-control" placeholder="Your Email">
+	                </div>
+	                </div>
               </div>
-              <div class="media-body">
-                <h3 class="heading">Easy to Order</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Subject">
               </div>
-            </div>      
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="media d-block text-center block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-5">
-              	<span class="flaticon-delivery-truck"></span>
+              <div class="form-group">
+                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
               </div>
-              <div class="media-body">
-                <h3 class="heading">Fastest Delivery</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+              <div class="form-group">
+                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
               </div>
-            </div>      
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="media d-block text-center block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-5">
-              	<span class="flaticon-coffee-bean"></span></div>
-              <div class="media-body">
-                <h3 class="heading">Quality Coffee</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>    
+            </form>
           </div>
         </div>
-    	</div>
+      </div>
     </section>
+
+    <div id="map"></div>
 
     <footer class="ftco-footer ftco-section img">
     	<div class="overlay"></div>
