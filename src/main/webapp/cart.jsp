@@ -62,7 +62,7 @@
                     </div>
                 </li>
                 <li class="nav-item"><a href="contact.jsp" class="nav-link">Contact</a></li>
-                <li class="nav-item cart"><a href="cart.html" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>1</small></span></a></li>
+                <li class="nav-item cart"><a href="${pageContext.request.contextPath}/cart" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>${count}</small></span></a></li>
             </ul>
         </div>
     </div>
@@ -360,10 +360,18 @@
         giam_gia.innerHTML = "$" + (sum * 0.15).toFixed(2);
         tong_tien.innerHTML = "$" + (sum - (sum * 0.15)).toFixed(2);
         const productId = event.target.dataset.productId;
+       if (productId && quantity) {
+           handleSendUpdate(quantity, productId);
+       }
+
+    }
+    var contextPath = '<%= request.getContextPath() %>';
+
+    function handleSendUpdate(quantity, idProduct) {
         const xhr = new XMLHttpRequest();
-        xhr.open('GET', '<%= request.getContextPath() %>/update-cart', true);
+        xhr.open('GET', contextPath+"/update-cart?quantity="+quantity+"&idProduct="+idProduct, true);
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        xhr.send(`?quantity=${quantity}&idProduct=${productId}`);
+        xhr.send();
         // Optional: handle the server response
         xhr.onload = function() {
             if (xhr.status != 200) { // analyze HTTP response status

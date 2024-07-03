@@ -60,7 +60,7 @@
                     </div>
                 </li>
                 <li class="nav-item"><a href="contact.jsp" class="nav-link">Contact</a></li>
-                <li class="nav-item cart"><a href="${pageContext.request.contextPath}/cart" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>1</small></span></a></li>
+                <li class="nav-item cart"><a href="${pageContext.request.contextPath}/cart" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>${count}</small></span></a></li>
             </ul>
         </div>
     </div>
@@ -178,7 +178,7 @@
                             <h3 class="billing-heading mb-4">Cart Total</h3>
                             <p class="d-flex">
                                 <span>Subtotal</span>
-                                <span>$20.60</span>
+                                <span>$${total}</span>
                             </p>
                             <p class="d-flex">
                                 <span>Delivery</span>
@@ -191,7 +191,7 @@
                             <hr>
                             <p class="d-flex total-price">
                                 <span>Total</span>
-                                <span>$17.60</span>
+                               <span>$<%= ((double) request.getAttribute("total")) - 3 %></span>
                             </p>
                         </div>
                     </div>

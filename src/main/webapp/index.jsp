@@ -51,7 +51,7 @@
           </div>
         </li>
         <li class="nav-item"><a href="views/web/contact.jsp" class="nav-link">Contact</a></li>
-        <li class="nav-item cart"><a href="views/web/cart.jsp" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>1</small></span></a></li>
+        <li class="nav-item cart"><a href="${pageContext.request.contextPath}/cart" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>${count}</small></span></a></li>
 <%--        tôi muốn hiện thêm 1 icon user khi hover sẽ hiển thị dropdown đăng nhập và đăng ký --%>
         <li class="nav-item dropdown fs-4">
           <a class="nav-link dropdown-toggle" href="#" id="dropdown0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

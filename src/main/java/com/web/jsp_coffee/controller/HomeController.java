@@ -25,8 +25,18 @@ public class HomeController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
+            // lay so luong san pham trong gio hang neu chua co thi la 0
+            HttpSession session = req.getSession();
+            int count = 0;
+            ArrayList<Product> cartquantity = (ArrayList<Product>) session.getAttribute("cart");
+            if (cartquantity != null) {
+                for (Product product : cartquantity) {
+                    count += product.getQuantity();
+                }
+            }
             ArrayList<Product> listProduct = ProductModel.getInstance().selectAll();
             ProductModel.getInstance().closeConnection();
+            req.setAttribute("count", count);
             req.setAttribute("listProduct", listProduct);
         } catch (Exception ex) {
             ex.printStackTrace();

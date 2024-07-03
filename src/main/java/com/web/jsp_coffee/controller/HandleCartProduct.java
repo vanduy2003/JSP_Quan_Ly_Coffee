@@ -26,6 +26,16 @@ public class HandleCartProduct extends HttpServlet {
 
         switch (path) {
             case "/cart":
+                // lay so luong san pham trong gio hang neu chua co thi la 0
+                int count = 0;
+                ArrayList<Product> cartquantity = (ArrayList<Product>) session.getAttribute("cart");
+                if (cartquantity != null) {
+                    for (Product product : cartquantity) {
+                        count += product.getQuantity();
+                    }
+                }
+                req.setAttribute("count", count);
+
                 req.getRequestDispatcher("cart.jsp").forward(req, resp);
                 break;
             case "/add-cart":
@@ -76,13 +86,15 @@ public class HandleCartProduct extends HttpServlet {
                         }
                     }
                 }
-                // in ra danh sach san pham trong gio hang
-                ArrayList<Product> cart = (ArrayList<Product>) req.getSession().getAttribute("cart");
-                if (cart != null) {
-                    for (Product product : cart) {
-                        System.out.println(product.getName() + " - " + product.getQuantity());
+                // cap nhat so luong san pham trong gio hang
+                int count_add = 0;
+                ArrayList<Product> cart_add = (ArrayList<Product>) session.getAttribute("cart");
+                if (cart_add != null) {
+                    for (Product product : cart_add) {
+                        count_add += product.getQuantity();
                     }
                 }
+                req.setAttribute("count", count_add);
                 resp.sendRedirect(req.getContextPath() + "/cart");
                 break;
             case "/remove-cart":
@@ -103,14 +115,20 @@ public class HandleCartProduct extends HttpServlet {
                         resp.sendRedirect(req.getContextPath() + "/cart");
                     }
                 }
+                // cap nhat so luong san pham trong gio hang
+                int count_remove = 0;
+                ArrayList<Product> cart_remove = (ArrayList<Product>) session.getAttribute("cart");
+                if (cart_remove != null) {
+                    for (Product product : cart_remove) {
+                        count_remove += product.getQuantity();
+                    }
+                }
+                req.setAttribute("count", count_remove);
+                resp.sendRedirect(req.getContextPath() + "/cart");
                 break;
             case "/update-cart":
-                System.out.println("Vao day");
-               // neu so luong san pham ve 0 thi xoa bo san pham do ra khoi gio hang
                 String idProductUpdate = req.getParameter("idProduct");
                 String quantityUpdate = req.getParameter("quantity");
-                System.out.println("idProductUpdate: " + idProductUpdate);
-                System.out.println("quantityUpdate: " + quantityUpdate);
                 if (idProductUpdate == null || quantityUpdate == null) {
                     req.setAttribute("error", "Product ID or Quantity is null");
                     break;
@@ -133,14 +151,33 @@ public class HandleCartProduct extends HttpServlet {
                 // in ra danh sach san pham trong gio hang
                 ArrayList<Product> cart_update = (ArrayList<Product>) req.getSession().getAttribute("cart");
                 if (cart_update != null) {
+                    // dem so luong san pham trong gio hang
+                    int count_update = 0;
                     for (Product product : cart_update) {
-                        System.out.println(product.getName() + " - " + product.getQuantity());
+                        count_update += product.getQuantity();
                     }
+                    req.setAttribute("count", count_update);
                 }
+
+
 
                 resp.sendRedirect(req.getContextPath() + "/cart");
                 break;
             case "/checkout":
+                // tinh tong tien
+                ArrayList<Product> cart_checkout = (ArrayList<Product>) session.getAttribute("cart");
+                if (cart_checkout != null) {
+                    // dem so luong san pham trong gio hang
+                    int count_checkout = 0;
+                    double total = 0;
+                    for (Product product : cart_checkout) {
+                        total += Float.parseFloat(product.getPrice()) * product.getQuantity();
+                        count_checkout += product.getQuantity();
+                    }
+                    req.setAttribute("count", count_checkout);
+                    req.setAttribute("total", total);
+                }
+
                 req.getRequestDispatcher("checkout.jsp").forward(req, resp);
                 break;
             default:

@@ -10,13 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43a066a4-0b9e-4bd0-909f-1e83181f1296" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/web/jsp_coffee/controller/HandleCartProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/web/jsp_coffee/dao/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/web/jsp_coffee/dao/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/web/jsp_coffee/model/DBUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/web/jsp_coffee/model/DBUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/web/jsp_coffee/model/ProductModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/web/jsp_coffee/model/ProductModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/web/jsp_coffee/controller/HandleCartProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/web/jsp_coffee/controller/HandleCartProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/web/jsp_coffee/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/web/jsp_coffee/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -290,7 +288,12 @@
       <workItem from="1719931772771" duration="48000" />
       <workItem from="1719931854935" duration="42000" />
       <workItem from="1719932096748" duration="1957000" />
-      <workItem from="1719966853850" duration="8166000" />
+      <workItem from="1719966853850" duration="8197000" />
+      <workItem from="1719977996343" duration="248000" />
+      <workItem from="1719983464311" duration="4000" />
+      <workItem from="1720007463550" duration="2062000" />
+      <workItem from="1720009665183" duration="8000" />
+      <workItem from="1720009796725" duration="3430000" />
     </task>
     <servers />
   </component>
