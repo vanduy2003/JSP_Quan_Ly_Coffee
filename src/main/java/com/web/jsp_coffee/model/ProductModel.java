@@ -67,7 +67,28 @@ public class ProductModel implements CommonDao <Product>{
     }
 
     public Product selectById(String id) {
-        return null;
+        try {
+            String query = String.format("SELECT * FROM products WHERE ProductID = %s", id);
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(query);
+            if (resultSet.next()) {
+                Product product = new Product();
+                product.setProductID(resultSet.getInt("ProductID"));
+                product.setName(resultSet.getString("Name"));
+                product.setPrice(resultSet.getString("Price"));
+                product.setMoTa(resultSet.getString("MoTa"));
+                product.setCategory(resultSet.getString("Category"));
+                product.setStockQuantity(resultSet.getString("StockQuantity"));
+                product.setImageURL(resultSet.getString("ImageURL"));
+                product.setSupplierID(resultSet.getInt("SupplierID"));
+                product.setIsAvailable(resultSet.getString("IsAvailable"));
+                return product;
+            }
+            return null;
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return null;
+        }
     }
 
     public ArrayList<Product> selectAll() {

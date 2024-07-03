@@ -10,6 +10,7 @@ public class Product {
     private String ImageURL;
     private int SupplierID;
     private String IsAvailable;
+    private int Quantity;
 
     public Product() {
     }
@@ -98,4 +99,11 @@ public class Product {
         this.IsAvailable = IsAvailable;
     }
 
+    public int getQuantity() {
+        return Quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        Quantity = quantity;
+    }
 }

@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBUtil {
-    private static final String URL = "jdbc:mysql://localhost:3306/coffee";
+    private static final String URL = "jdbc:mysql://localhost:3306/web_coffee";
     private static final String USER = "root";
     private static final String PASSWORD = "";
 

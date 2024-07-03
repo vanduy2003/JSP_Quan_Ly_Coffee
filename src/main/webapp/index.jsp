@@ -368,7 +368,7 @@
             <h3><a href="#"><%=product.getName()%></a></h3>
             <p><%=product.getMoTa()%></p>
             <p class="price"><span>$<%=product.getPrice()%></span></p>
-            <p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
+            <p><a href="${pageContext.request.contextPath}/add-cart?idProduct=<%=product.getProductID()%>&quantity=1" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
           </div>
         </div>
       </div>
